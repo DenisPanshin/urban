@@ -3,9 +3,8 @@ from time import sleep
 from random import randint
 
 
-class Bank(Thread):
+class Bank:
     def __init__(self, balance=0):
-        super().__init__()
         self.balance = balance
         self.lock = Lock()
 
